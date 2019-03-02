@@ -36,7 +36,7 @@ end
 
   get '/articles/:id/edit' do
   @article = Article.find(params[:id])
-  redirect to '/articles/:id'
+  redirect to "/articles/#{ @article.id }"
   erb :edit
   end
 
