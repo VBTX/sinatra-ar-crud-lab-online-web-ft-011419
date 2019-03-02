@@ -27,12 +27,12 @@ end
   @article = Article.create(params)
   redirect to "/articles/#{ @article.id }"
   erb :index
-end
+  end
 
   get '/articles/:id' do
-   params[:id]
+  @article = Article.find(params[:id])
   erb :show
-end
+  end
 
   get '/articles/:id/edit' do
   erb :edit
