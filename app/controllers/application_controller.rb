@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
     redirect to '/articles'
   end
 
-  get '/articles/' do
+  get '/articles' do
   @articles = Article.all
   erb :index
   end
