@@ -28,7 +28,11 @@ end
   erb :edit
 end
 
-  post '/articles/:id/edit' do
+  patch '/articles/:id/edit' do
+
+  end
+
+  delete '/articles/:id' do
 
   end
 end
