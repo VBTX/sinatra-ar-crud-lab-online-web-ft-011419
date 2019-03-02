@@ -25,8 +25,7 @@ end
 
   post '/articles' do
   @article = Article.create(params)
-  redirect to "/articles/#{ @article.id }"
-  erb :index
+  redirect to "/articles/#{@article.id}"
   end
 
   get '/articles/:id' do
